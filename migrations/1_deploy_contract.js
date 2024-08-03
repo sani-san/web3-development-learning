@@ -1,4 +1,4 @@
-// // section 3
+// * SECTION 3 
 
 // const Types = artifacts.require("Types");
 // const WrapAround = artifacts.require("WrapAround");
@@ -18,8 +18,14 @@
 //   deployer.deploy(Constructor);
 // };
 
-const x = artifacts.require('');
+// * SECTION 4 
 
-module.exports = function (deployer) {
+const SampleContract = artifacts.require("SampleContract");
+const SampleCallback = artifacts.require("SampleCallback");
+const SmartMoney = artifacts.require("SmartMoney");
 
-}
+module.exports = async function (deployer) {
+  await deployer.deploy(SampleContract);
+  await deployer.deploy(SampleCallback);
+  await deployer.deploy(SmartMoney);
+};
