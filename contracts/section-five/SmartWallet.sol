@@ -10,8 +10,8 @@ contract Consumer {
 }
 
 contract SmartWallet {
-  address public payable owner;
-  address public payable nextOwner;
+  address payable owner;
+  address payable nextOwner;
   uint public guardiansResetCount;
   uint public constant confirmationsFromGuardiansForReset = 3;
 
