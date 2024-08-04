@@ -1,0 +1,1824 @@
+{
+  "contractName": "SmartMoney",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "getContractBalance",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "depositEth",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "withdrawEth",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address payable",
+          "name": "to",
+          "type": "address"
+        }
+      ],
+      "name": "withdrawToAddress",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"depositEth\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getContractBalance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"withdrawEth\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address payable\",\"name\":\"to\",\"type\":\"address\"}],\"name\":\"withdrawToAddress\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/section-four/SmartMoney.sol\":\"SmartMoney\"},\"evmVersion\":\"shanghai\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/section-four/SmartMoney.sol\":{\"keccak256\":\"0x7f0155abc3fc4c5974cfcf157d74e440e1f50962c000c0de10e0e658036d1b5a\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://163eaf221f951a8506e5fc12edc85062611229f4a96845873be81292572ea7c5\",\"dweb:/ipfs/QmfKft7x11dZVra49djWydatBDKahLmEVWsvxqwgJrTNzu\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561000f575f80fd5b50335f806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506102bd8061005c5f395ff3fe60806040526004361061003e575f3560e01c8063439370b1146100425780636f9fb98a1461004c578063a0ef91df14610076578063a92bd72c1461008c575b5f80fd5b61004a6100b4565b005b348015610057575f80fd5b506100606100b6565b60405161006d91906101e5565b60405180910390f35b348015610081575f80fd5b5061008a6100bd565b005b348015610097575f80fd5b506100b260048036038101906100ad919061025c565b61017f565b005b565b5f47905090565b5f8054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614610113575f80fd5b5f8054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc6101546100b6565b90811502906040515f60405180830381858888f1935050505015801561017c573d5f803e3d5ffd5b50565b8073ffffffffffffffffffffffffffffffffffffffff166108fc6101a16100b6565b90811502906040515f60405180830381858888f193505050501580156101c9573d5f803e3d5ffd5b5050565b5f819050919050565b6101df816101cd565b82525050565b5f6020820190506101f85f8301846101d6565b92915050565b5f80fd5b5f73ffffffffffffffffffffffffffffffffffffffff82169050919050565b5f61022b82610202565b9050919050565b61023b81610221565b8114610245575f80fd5b50565b5f8135905061025681610232565b92915050565b5f60208284031215610271576102706101fe565b5b5f61027e84828501610248565b9150509291505056fea26469706673582212201a7fb91a8d2c9f10910a417bdbae678d276f7716e4266b63a0ba10936f9542c664736f6c63430008150033",
+  "deployedBytecode": "0x60806040526004361061003e575f3560e01c8063439370b1146100425780636f9fb98a1461004c578063a0ef91df14610076578063a92bd72c1461008c575b5f80fd5b61004a6100b4565b005b348015610057575f80fd5b506100606100b6565b60405161006d91906101e5565b60405180910390f35b348015610081575f80fd5b5061008a6100bd565b005b348015610097575f80fd5b506100b260048036038101906100ad919061025c565b61017f565b005b565b5f47905090565b5f8054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614610113575f80fd5b5f8054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc6101546100b6565b90811502906040515f60405180830381858888f1935050505015801561017c573d5f803e3d5ffd5b50565b8073ffffffffffffffffffffffffffffffffffffffff166108fc6101a16100b6565b90811502906040515f60405180830381858888f193505050501580156101c9573d5f803e3d5ffd5b5050565b5f819050919050565b6101df816101cd565b82525050565b5f6020820190506101f85f8301846101d6565b92915050565b5f80fd5b5f73ffffffffffffffffffffffffffffffffffffffff82169050919050565b5f61022b82610202565b9050919050565b61023b81610221565b8114610245575f80fd5b50565b5f8135905061025681610232565b92915050565b5f60208284031215610271576102706101fe565b5b5f61027e84828501610248565b9150509291505056fea26469706673582212201a7fb91a8d2c9f10910a417bdbae678d276f7716e4266b63a0ba10936f9542c664736f6c63430008150033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [
+    {
+      "ast": {
+        "nativeSrc": "0:1664:19",
+        "nodeType": "YulBlock",
+        "src": "0:1664:19",
+        "statements": [
+          {
+            "body": {
+              "nativeSrc": "52:32:19",
+              "nodeType": "YulBlock",
+              "src": "52:32:19",
+              "statements": [
+                {
+                  "nativeSrc": "62:16:19",
+                  "nodeType": "YulAssignment",
+                  "src": "62:16:19",
+                  "value": {
+                    "name": "value",
+                    "nativeSrc": "73:5:19",
+                    "nodeType": "YulIdentifier",
+                    "src": "73:5:19"
+                  },
+                  "variableNames": [
+                    {
+                      "name": "cleaned",
+                      "nativeSrc": "62:7:19",
+                      "nodeType": "YulIdentifier",
+                      "src": "62:7:19"
+                    }
+                  ]
+                }
+              ]
+            },
+            "name": "cleanup_t_uint256",
+            "nativeSrc": "7:77:19",
+            "nodeType": "YulFunctionDefinition",
+            "parameters": [
+              {
+                "name": "value",
+                "nativeSrc": "34:5:19",
+                "nodeType": "YulTypedName",
+                "src": "34:5:19",
+                "type": ""
+              }
+            ],
+            "returnVariables": [
+              {
+                "name": "cleaned",
+                "nativeSrc": "44:7:19",
+                "nodeType": "YulTypedName",
+                "src": "44:7:19",
+                "type": ""
+              }
+            ],
+            "src": "7:77:19"
+          },
+          {
+            "body": {
+              "nativeSrc": "155:53:19",
+              "nodeType": "YulBlock",
+              "src": "155:53:19",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "name": "pos",
+                        "nativeSrc": "172:3:19",
+                        "nodeType": "YulIdentifier",
+                        "src": "172:3:19"
+                      },
+                      {
+                        "arguments": [
+                          {
+                            "name": "value",
+                            "nativeSrc": "195:5:19",
+                            "nodeType": "YulIdentifier",
+                            "src": "195:5:19"
+                          }
+                        ],
+                        "functionName": {
+                          "name": "cleanup_t_uint256",
+                          "nativeSrc": "177:17:19",
+                          "nodeType": "YulIdentifier",
+                          "src": "177:17:19"
+                        },
+                        "nativeSrc": "177:24:19",
+                        "nodeType": "YulFunctionCall",
+                        "src": "177:24:19"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "mstore",
+                      "nativeSrc": "165:6:19",
+                      "nodeType": "YulIdentifier",
+                      "src": "165:6:19"
+                    },
+                    "nativeSrc": "165:37:19",
+                    "nodeType": "YulFunctionCall",
+                    "src": "165:37:19"
+                  },
+                  "nativeSrc": "165:37:19",
+                  "nodeType": "YulExpressionStatement",
+                  "src": "165:37:19"
+                }
+              ]
+            },
+            "name": "abi_encode_t_uint256_to_t_uint256_fromStack",
+            "nativeSrc": "90:118:19",
+            "nodeType": "YulFunctionDefinition",
+            "parameters": [
+              {
+                "name": "value",
+                "nativeSrc": "143:5:19",
+                "nodeType": "YulTypedName",
+                "src": "143:5:19",
+                "type": ""
+              },
+              {
+                "name": "pos",
+                "nativeSrc": "150:3:19",
+                "nodeType": "YulTypedName",
+                "src": "150:3:19",
+                "type": ""
+              }
+            ],
+            "src": "90:118:19"
+          },
+          {
+            "body": {
+              "nativeSrc": "312:124:19",
+              "nodeType": "YulBlock",
+              "src": "312:124:19",
+              "statements": [
+                {
+                  "nativeSrc": "322:26:19",
+                  "nodeType": "YulAssignment",
+                  "src": "322:26:19",
+                  "value": {
+                    "arguments": [
+                      {
+                        "name": "headStart",
+                        "nativeSrc": "334:9:19",
+                        "nodeType": "YulIdentifier",
+                        "src": "334:9:19"
+                      },
+                      {
+                        "kind": "number",
+                        "nativeSrc": "345:2:19",
+                        "nodeType": "YulLiteral",
+                        "src": "345:2:19",
+                        "type": "",
+                        "value": "32"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "add",
+                      "nativeSrc": "330:3:19",
+                      "nodeType": "YulIdentifier",
+                      "src": "330:3:19"
+                    },
+                    "nativeSrc": "330:18:19",
+                    "nodeType": "YulFunctionCall",
+                    "src": "330:18:19"
+                  },
+                  "variableNames": [
+                    {
+                      "name": "tail",
+                      "nativeSrc": "322:4:19",
+                      "nodeType": "YulIdentifier",
+                      "src": "322:4:19"
+                    }
+                  ]
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "name": "value0",
+                        "nativeSrc": "402:6:19",
+                        "nodeType": "YulIdentifier",
+                        "src": "402:6:19"
+                      },
+                      {
+                        "arguments": [
+                          {
+                            "name": "headStart",
+                            "nativeSrc": "415:9:19",
+                            "nodeType": "YulIdentifier",
+                            "src": "415:9:19"
+                          },
+                          {
+                            "kind": "number",
+                            "nativeSrc": "426:1:19",
+                            "nodeType": "YulLiteral",
+                            "src": "426:1:19",
+                            "type": "",
+                            "value": "0"
+                          }
+                        ],
+                        "functionName": {
+                          "name": "add",
+                          "nativeSrc": "411:3:19",
+                          "nodeType": "YulIdentifier",
+                          "src": "411:3:19"
+                        },
+                        "nativeSrc": "411:17:19",
+                        "nodeType": "YulFunctionCall",
+                        "src": "411:17:19"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "abi_encode_t_uint256_to_t_uint256_fromStack",
+                      "nativeSrc": "358:43:19",
+                      "nodeType": "YulIdentifier",
+                      "src": "358:43:19"
+                    },
+                    "nativeSrc": "358:71:19",
+                    "nodeType": "YulFunctionCall",
+                    "src": "358:71:19"
+                  },
+                  "nativeSrc": "358:71:19",
+                  "nodeType": "YulExpressionStatement",
+                  "src": "358:71:19"
+                }
+              ]
+            },
+            "name": "abi_encode_tuple_t_uint256__to_t_uint256__fromStack_reversed",
+            "nativeSrc": "214:222:19",
+            "nodeType": "YulFunctionDefinition",
+            "parameters": [
+              {
+                "name": "headStart",
+                "nativeSrc": "284:9:19",
+                "nodeType": "YulTypedName",
+                "src": "284:9:19",
+                "type": ""
+              },
+              {
+                "name": "value0",
+                "nativeSrc": "296:6:19",
+                "nodeType": "YulTypedName",
+                "src": "296:6:19",
+                "type": ""
+              }
+            ],
+            "returnVariables": [
+              {
+                "name": "tail",
+                "nativeSrc": "307:4:19",
+                "nodeType": "YulTypedName",
+                "src": "307:4:19",
+                "type": ""
+              }
+            ],
+            "src": "214:222:19"
+          },
+          {
+            "body": {
+              "nativeSrc": "482:35:19",
+              "nodeType": "YulBlock",
+              "src": "482:35:19",
+              "statements": [
+                {
+                  "nativeSrc": "492:19:19",
+                  "nodeType": "YulAssignment",
+                  "src": "492:19:19",
+                  "value": {
+                    "arguments": [
+                      {
+                        "kind": "number",
+                        "nativeSrc": "508:2:19",
+                        "nodeType": "YulLiteral",
+                        "src": "508:2:19",
+                        "type": "",
+                        "value": "64"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "mload",
+                      "nativeSrc": "502:5:19",
+                      "nodeType": "YulIdentifier",
+                      "src": "502:5:19"
+                    },
+                    "nativeSrc": "502:9:19",
+                    "nodeType": "YulFunctionCall",
+                    "src": "502:9:19"
+                  },
+                  "variableNames": [
+                    {
+                      "name": "memPtr",
+                      "nativeSrc": "492:6:19",
+                      "nodeType": "YulIdentifier",
+                      "src": "492:6:19"
+                    }
+                  ]
+                }
+              ]
+            },
+            "name": "allocate_unbounded",
+            "nativeSrc": "442:75:19",
+            "nodeType": "YulFunctionDefinition",
+            "returnVariables": [
+              {
+                "name": "memPtr",
+                "nativeSrc": "475:6:19",
+                "nodeType": "YulTypedName",
+                "src": "475:6:19",
+                "type": ""
+              }
+            ],
+            "src": "442:75:19"
+          },
+          {
+            "body": {
+              "nativeSrc": "612:28:19",
+              "nodeType": "YulBlock",
+              "src": "612:28:19",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "kind": "number",
+                        "nativeSrc": "629:1:19",
+                        "nodeType": "YulLiteral",
+                        "src": "629:1:19",
+                        "type": "",
+                        "value": "0"
+                      },
+                      {
+                        "kind": "number",
+                        "nativeSrc": "632:1:19",
+                        "nodeType": "YulLiteral",
+                        "src": "632:1:19",
+                        "type": "",
+                        "value": "0"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "revert",
+                      "nativeSrc": "622:6:19",
+                      "nodeType": "YulIdentifier",
+                      "src": "622:6:19"
+                    },
+                    "nativeSrc": "622:12:19",
+                    "nodeType": "YulFunctionCall",
+                    "src": "622:12:19"
+                  },
+                  "nativeSrc": "622:12:19",
+                  "nodeType": "YulExpressionStatement",
+                  "src": "622:12:19"
+                }
+              ]
+            },
+            "name": "revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b",
+            "nativeSrc": "523:117:19",
+            "nodeType": "YulFunctionDefinition",
+            "src": "523:117:19"
+          },
+          {
+            "body": {
+              "nativeSrc": "735:28:19",
+              "nodeType": "YulBlock",
+              "src": "735:28:19",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "kind": "number",
+                        "nativeSrc": "752:1:19",
+                        "nodeType": "YulLiteral",
+                        "src": "752:1:19",
+                        "type": "",
+                        "value": "0"
+                      },
+                      {
+                        "kind": "number",
+                        "nativeSrc": "755:1:19",
+                        "nodeType": "YulLiteral",
+                        "src": "755:1:19",
+                        "type": "",
+                        "value": "0"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "revert",
+                      "nativeSrc": "745:6:19",
+                      "nodeType": "YulIdentifier",
+                      "src": "745:6:19"
+                    },
+                    "nativeSrc": "745:12:19",
+                    "nodeType": "YulFunctionCall",
+                    "src": "745:12:19"
+                  },
+                  "nativeSrc": "745:12:19",
+                  "nodeType": "YulExpressionStatement",
+                  "src": "745:12:19"
+                }
+              ]
+            },
+            "name": "revert_error_c1322bf8034eace5e0b5c7295db60986aa89aae5e0ea0873e4689e076861a5db",
+            "nativeSrc": "646:117:19",
+            "nodeType": "YulFunctionDefinition",
+            "src": "646:117:19"
+          },
+          {
+            "body": {
+              "nativeSrc": "814:81:19",
+              "nodeType": "YulBlock",
+              "src": "814:81:19",
+              "statements": [
+                {
+                  "nativeSrc": "824:65:19",
+                  "nodeType": "YulAssignment",
+                  "src": "824:65:19",
+                  "value": {
+                    "arguments": [
+                      {
+                        "name": "value",
+                        "nativeSrc": "839:5:19",
+                        "nodeType": "YulIdentifier",
+                        "src": "839:5:19"
+                      },
+                      {
+                        "kind": "number",
+                        "nativeSrc": "846:42:19",
+                        "nodeType": "YulLiteral",
+                        "src": "846:42:19",
+                        "type": "",
+                        "value": "0xffffffffffffffffffffffffffffffffffffffff"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "and",
+                      "nativeSrc": "835:3:19",
+                      "nodeType": "YulIdentifier",
+                      "src": "835:3:19"
+                    },
+                    "nativeSrc": "835:54:19",
+                    "nodeType": "YulFunctionCall",
+                    "src": "835:54:19"
+                  },
+                  "variableNames": [
+                    {
+                      "name": "cleaned",
+                      "nativeSrc": "824:7:19",
+                      "nodeType": "YulIdentifier",
+                      "src": "824:7:19"
+                    }
+                  ]
+                }
+              ]
+            },
+            "name": "cleanup_t_uint160",
+            "nativeSrc": "769:126:19",
+            "nodeType": "YulFunctionDefinition",
+            "parameters": [
+              {
+                "name": "value",
+                "nativeSrc": "796:5:19",
+                "nodeType": "YulTypedName",
+                "src": "796:5:19",
+                "type": ""
+              }
+            ],
+            "returnVariables": [
+              {
+                "name": "cleaned",
+                "nativeSrc": "806:7:19",
+                "nodeType": "YulTypedName",
+                "src": "806:7:19",
+                "type": ""
+              }
+            ],
+            "src": "769:126:19"
+          },
+          {
+            "body": {
+              "nativeSrc": "954:51:19",
+              "nodeType": "YulBlock",
+              "src": "954:51:19",
+              "statements": [
+                {
+                  "nativeSrc": "964:35:19",
+                  "nodeType": "YulAssignment",
+                  "src": "964:35:19",
+                  "value": {
+                    "arguments": [
+                      {
+                        "name": "value",
+                        "nativeSrc": "993:5:19",
+                        "nodeType": "YulIdentifier",
+                        "src": "993:5:19"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "cleanup_t_uint160",
+                      "nativeSrc": "975:17:19",
+                      "nodeType": "YulIdentifier",
+                      "src": "975:17:19"
+                    },
+                    "nativeSrc": "975:24:19",
+                    "nodeType": "YulFunctionCall",
+                    "src": "975:24:19"
+                  },
+                  "variableNames": [
+                    {
+                      "name": "cleaned",
+                      "nativeSrc": "964:7:19",
+                      "nodeType": "YulIdentifier",
+                      "src": "964:7:19"
+                    }
+                  ]
+                }
+              ]
+            },
+            "name": "cleanup_t_address_payable",
+            "nativeSrc": "901:104:19",
+            "nodeType": "YulFunctionDefinition",
+            "parameters": [
+              {
+                "name": "value",
+                "nativeSrc": "936:5:19",
+                "nodeType": "YulTypedName",
+                "src": "936:5:19",
+                "type": ""
+              }
+            ],
+            "returnVariables": [
+              {
+                "name": "cleaned",
+                "nativeSrc": "946:7:19",
+                "nodeType": "YulTypedName",
+                "src": "946:7:19",
+                "type": ""
+              }
+            ],
+            "src": "901:104:19"
+          },
+          {
+            "body": {
+              "nativeSrc": "1062:87:19",
+              "nodeType": "YulBlock",
+              "src": "1062:87:19",
+              "statements": [
+                {
+                  "body": {
+                    "nativeSrc": "1127:16:19",
+                    "nodeType": "YulBlock",
+                    "src": "1127:16:19",
+                    "statements": [
+                      {
+                        "expression": {
+                          "arguments": [
+                            {
+                              "kind": "number",
+                              "nativeSrc": "1136:1:19",
+                              "nodeType": "YulLiteral",
+                              "src": "1136:1:19",
+                              "type": "",
+                              "value": "0"
+                            },
+                            {
+                              "kind": "number",
+                              "nativeSrc": "1139:1:19",
+                              "nodeType": "YulLiteral",
+                              "src": "1139:1:19",
+                              "type": "",
+                              "value": "0"
+                            }
+                          ],
+                          "functionName": {
+                            "name": "revert",
+                            "nativeSrc": "1129:6:19",
+                            "nodeType": "YulIdentifier",
+                            "src": "1129:6:19"
+                          },
+                          "nativeSrc": "1129:12:19",
+                          "nodeType": "YulFunctionCall",
+                          "src": "1129:12:19"
+                        },
+                        "nativeSrc": "1129:12:19",
+                        "nodeType": "YulExpressionStatement",
+                        "src": "1129:12:19"
+                      }
+                    ]
+                  },
+                  "condition": {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "name": "value",
+                            "nativeSrc": "1085:5:19",
+                            "nodeType": "YulIdentifier",
+                            "src": "1085:5:19"
+                          },
+                          {
+                            "arguments": [
+                              {
+                                "name": "value",
+                                "nativeSrc": "1118:5:19",
+                                "nodeType": "YulIdentifier",
+                                "src": "1118:5:19"
+                              }
+                            ],
+                            "functionName": {
+                              "name": "cleanup_t_address_payable",
+                              "nativeSrc": "1092:25:19",
+                              "nodeType": "YulIdentifier",
+                              "src": "1092:25:19"
+                            },
+                            "nativeSrc": "1092:32:19",
+                            "nodeType": "YulFunctionCall",
+                            "src": "1092:32:19"
+                          }
+                        ],
+                        "functionName": {
+                          "name": "eq",
+                          "nativeSrc": "1082:2:19",
+                          "nodeType": "YulIdentifier",
+                          "src": "1082:2:19"
+                        },
+                        "nativeSrc": "1082:43:19",
+                        "nodeType": "YulFunctionCall",
+                        "src": "1082:43:19"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "iszero",
+                      "nativeSrc": "1075:6:19",
+                      "nodeType": "YulIdentifier",
+                      "src": "1075:6:19"
+                    },
+                    "nativeSrc": "1075:51:19",
+                    "nodeType": "YulFunctionCall",
+                    "src": "1075:51:19"
+                  },
+                  "nativeSrc": "1072:71:19",
+                  "nodeType": "YulIf",
+                  "src": "1072:71:19"
+                }
+              ]
+            },
+            "name": "validator_revert_t_address_payable",
+            "nativeSrc": "1011:138:19",
+            "nodeType": "YulFunctionDefinition",
+            "parameters": [
+              {
+                "name": "value",
+                "nativeSrc": "1055:5:19",
+                "nodeType": "YulTypedName",
+                "src": "1055:5:19",
+                "type": ""
+              }
+            ],
+            "src": "1011:138:19"
+          },
+          {
+            "body": {
+              "nativeSrc": "1215:95:19",
+              "nodeType": "YulBlock",
+              "src": "1215:95:19",
+              "statements": [
+                {
+                  "nativeSrc": "1225:29:19",
+                  "nodeType": "YulAssignment",
+                  "src": "1225:29:19",
+                  "value": {
+                    "arguments": [
+                      {
+                        "name": "offset",
+                        "nativeSrc": "1247:6:19",
+                        "nodeType": "YulIdentifier",
+                        "src": "1247:6:19"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "calldataload",
+                      "nativeSrc": "1234:12:19",
+                      "nodeType": "YulIdentifier",
+                      "src": "1234:12:19"
+                    },
+                    "nativeSrc": "1234:20:19",
+                    "nodeType": "YulFunctionCall",
+                    "src": "1234:20:19"
+                  },
+                  "variableNames": [
+                    {
+                      "name": "value",
+                      "nativeSrc": "1225:5:19",
+                      "nodeType": "YulIdentifier",
+                      "src": "1225:5:19"
+                    }
+                  ]
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "name": "value",
+                        "nativeSrc": "1298:5:19",
+                        "nodeType": "YulIdentifier",
+                        "src": "1298:5:19"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "validator_revert_t_address_payable",
+                      "nativeSrc": "1263:34:19",
+                      "nodeType": "YulIdentifier",
+                      "src": "1263:34:19"
+                    },
+                    "nativeSrc": "1263:41:19",
+                    "nodeType": "YulFunctionCall",
+                    "src": "1263:41:19"
+                  },
+                  "nativeSrc": "1263:41:19",
+                  "nodeType": "YulExpressionStatement",
+                  "src": "1263:41:19"
+                }
+              ]
+            },
+            "name": "abi_decode_t_address_payable",
+            "nativeSrc": "1155:155:19",
+            "nodeType": "YulFunctionDefinition",
+            "parameters": [
+              {
+                "name": "offset",
+                "nativeSrc": "1193:6:19",
+                "nodeType": "YulTypedName",
+                "src": "1193:6:19",
+                "type": ""
+              },
+              {
+                "name": "end",
+                "nativeSrc": "1201:3:19",
+                "nodeType": "YulTypedName",
+                "src": "1201:3:19",
+                "type": ""
+              }
+            ],
+            "returnVariables": [
+              {
+                "name": "value",
+                "nativeSrc": "1209:5:19",
+                "nodeType": "YulTypedName",
+                "src": "1209:5:19",
+                "type": ""
+              }
+            ],
+            "src": "1155:155:19"
+          },
+          {
+            "body": {
+              "nativeSrc": "1390:271:19",
+              "nodeType": "YulBlock",
+              "src": "1390:271:19",
+              "statements": [
+                {
+                  "body": {
+                    "nativeSrc": "1436:83:19",
+                    "nodeType": "YulBlock",
+                    "src": "1436:83:19",
+                    "statements": [
+                      {
+                        "expression": {
+                          "arguments": [],
+                          "functionName": {
+                            "name": "revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b",
+                            "nativeSrc": "1438:77:19",
+                            "nodeType": "YulIdentifier",
+                            "src": "1438:77:19"
+                          },
+                          "nativeSrc": "1438:79:19",
+                          "nodeType": "YulFunctionCall",
+                          "src": "1438:79:19"
+                        },
+                        "nativeSrc": "1438:79:19",
+                        "nodeType": "YulExpressionStatement",
+                        "src": "1438:79:19"
+                      }
+                    ]
+                  },
+                  "condition": {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "name": "dataEnd",
+                            "nativeSrc": "1411:7:19",
+                            "nodeType": "YulIdentifier",
+                            "src": "1411:7:19"
+                          },
+                          {
+                            "name": "headStart",
+                            "nativeSrc": "1420:9:19",
+                            "nodeType": "YulIdentifier",
+                            "src": "1420:9:19"
+                          }
+                        ],
+                        "functionName": {
+                          "name": "sub",
+                          "nativeSrc": "1407:3:19",
+                          "nodeType": "YulIdentifier",
+                          "src": "1407:3:19"
+                        },
+                        "nativeSrc": "1407:23:19",
+                        "nodeType": "YulFunctionCall",
+                        "src": "1407:23:19"
+                      },
+                      {
+                        "kind": "number",
+                        "nativeSrc": "1432:2:19",
+                        "nodeType": "YulLiteral",
+                        "src": "1432:2:19",
+                        "type": "",
+                        "value": "32"
+                      }
+                    ],
+                    "functionName": {
+                      "name": "slt",
+                      "nativeSrc": "1403:3:19",
+                      "nodeType": "YulIdentifier",
+                      "src": "1403:3:19"
+                    },
+                    "nativeSrc": "1403:32:19",
+                    "nodeType": "YulFunctionCall",
+                    "src": "1403:32:19"
+                  },
+                  "nativeSrc": "1400:119:19",
+                  "nodeType": "YulIf",
+                  "src": "1400:119:19"
+                },
+                {
+                  "nativeSrc": "1529:125:19",
+                  "nodeType": "YulBlock",
+                  "src": "1529:125:19",
+                  "statements": [
+                    {
+                      "nativeSrc": "1544:15:19",
+                      "nodeType": "YulVariableDeclaration",
+                      "src": "1544:15:19",
+                      "value": {
+                        "kind": "number",
+                        "nativeSrc": "1558:1:19",
+                        "nodeType": "YulLiteral",
+                        "src": "1558:1:19",
+                        "type": "",
+                        "value": "0"
+                      },
+                      "variables": [
+                        {
+                          "name": "offset",
+                          "nativeSrc": "1548:6:19",
+                          "nodeType": "YulTypedName",
+                          "src": "1548:6:19",
+                          "type": ""
+                        }
+                      ]
+                    },
+                    {
+                      "nativeSrc": "1573:71:19",
+                      "nodeType": "YulAssignment",
+                      "src": "1573:71:19",
+                      "value": {
+                        "arguments": [
+                          {
+                            "arguments": [
+                              {
+                                "name": "headStart",
+                                "nativeSrc": "1616:9:19",
+                                "nodeType": "YulIdentifier",
+                                "src": "1616:9:19"
+                              },
+                              {
+                                "name": "offset",
+                                "nativeSrc": "1627:6:19",
+                                "nodeType": "YulIdentifier",
+                                "src": "1627:6:19"
+                              }
+                            ],
+                            "functionName": {
+                              "name": "add",
+                              "nativeSrc": "1612:3:19",
+                              "nodeType": "YulIdentifier",
+                              "src": "1612:3:19"
+                            },
+                            "nativeSrc": "1612:22:19",
+                            "nodeType": "YulFunctionCall",
+                            "src": "1612:22:19"
+                          },
+                          {
+                            "name": "dataEnd",
+                            "nativeSrc": "1636:7:19",
+                            "nodeType": "YulIdentifier",
+                            "src": "1636:7:19"
+                          }
+                        ],
+                        "functionName": {
+                          "name": "abi_decode_t_address_payable",
+                          "nativeSrc": "1583:28:19",
+                          "nodeType": "YulIdentifier",
+                          "src": "1583:28:19"
+                        },
+                        "nativeSrc": "1583:61:19",
+                        "nodeType": "YulFunctionCall",
+                        "src": "1583:61:19"
+                      },
+                      "variableNames": [
+                        {
+                          "name": "value0",
+                          "nativeSrc": "1573:6:19",
+                          "nodeType": "YulIdentifier",
+                          "src": "1573:6:19"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "name": "abi_decode_tuple_t_address_payable",
+            "nativeSrc": "1316:345:19",
+            "nodeType": "YulFunctionDefinition",
+            "parameters": [
+              {
+                "name": "headStart",
+                "nativeSrc": "1360:9:19",
+                "nodeType": "YulTypedName",
+                "src": "1360:9:19",
+                "type": ""
+              },
+              {
+                "name": "dataEnd",
+                "nativeSrc": "1371:7:19",
+                "nodeType": "YulTypedName",
+                "src": "1371:7:19",
+                "type": ""
+              }
+            ],
+            "returnVariables": [
+              {
+                "name": "value0",
+                "nativeSrc": "1383:6:19",
+                "nodeType": "YulTypedName",
+                "src": "1383:6:19",
+                "type": ""
+              }
+            ],
+            "src": "1316:345:19"
+          }
+        ]
+      },
+      "contents": "{\n\n    function cleanup_t_uint256(value) -> cleaned {\n        cleaned := value\n    }\n\n    function abi_encode_t_uint256_to_t_uint256_fromStack(value, pos) {\n        mstore(pos, cleanup_t_uint256(value))\n    }\n\n    function abi_encode_tuple_t_uint256__to_t_uint256__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function allocate_unbounded() -> memPtr {\n        memPtr := mload(64)\n    }\n\n    function revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() {\n        revert(0, 0)\n    }\n\n    function revert_error_c1322bf8034eace5e0b5c7295db60986aa89aae5e0ea0873e4689e076861a5db() {\n        revert(0, 0)\n    }\n\n    function cleanup_t_uint160(value) -> cleaned {\n        cleaned := and(value, 0xffffffffffffffffffffffffffffffffffffffff)\n    }\n\n    function cleanup_t_address_payable(value) -> cleaned {\n        cleaned := cleanup_t_uint160(value)\n    }\n\n    function validator_revert_t_address_payable(value) {\n        if iszero(eq(value, cleanup_t_address_payable(value))) { revert(0, 0) }\n    }\n\n    function abi_decode_t_address_payable(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_address_payable(value)\n    }\n\n    function abi_decode_tuple_t_address_payable(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address_payable(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n}\n",
+      "id": 19,
+      "language": "Yul",
+      "name": "#utility.yul"
+    }
+  ],
+  "sourceMap": "80:500:11:-:0;;;148:45;;;;;;;;;;177:10;169:5;;:18;;;;;;;;;;;;;;;;;;80:500;;;;;;",
+  "deployedSourceMap": "80:500:11:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;303:39;;;:::i;:::-;;199:98;;;;;;;;;;;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;348:123;;;;;;;;;;;;;:::i;:::-;;477:100;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;:::i;:::-;;303:39;:::o;199:98::-;249:4;269:21;262:28;;199:98;:::o;348:123::-;407:5;;;;;;;;;;393:19;;:10;:19;;;385:28;;;;;;428:5;;;;;;;;;;420:23;;:45;444:20;:18;:20::i;:::-;420:45;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;348:123::o;477:100::-;538:2;:11;;:33;550:20;:18;:20::i;:::-;538:33;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;477:100;:::o;7:77:19:-;44:7;73:5;62:16;;7:77;;;:::o;90:118::-;177:24;195:5;177:24;:::i;:::-;172:3;165:37;90:118;;:::o;214:222::-;307:4;345:2;334:9;330:18;322:26;;358:71;426:1;415:9;411:17;402:6;358:71;:::i;:::-;214:222;;;;:::o;523:117::-;632:1;629;622:12;769:126;806:7;846:42;839:5;835:54;824:65;;769:126;;;:::o;901:104::-;946:7;975:24;993:5;975:24;:::i;:::-;964:35;;901:104;;;:::o;1011:138::-;1092:32;1118:5;1092:32;:::i;:::-;1085:5;1082:43;1072:71;;1139:1;1136;1129:12;1072:71;1011:138;:::o;1155:155::-;1209:5;1247:6;1234:20;1225:29;;1263:41;1298:5;1263:41;:::i;:::-;1155:155;;;;:::o;1316:345::-;1383:6;1432:2;1420:9;1411:7;1407:23;1403:32;1400:119;;;1438:79;;:::i;:::-;1400:119;1558:1;1583:61;1636:7;1627:6;1616:9;1612:22;1583:61;:::i;:::-;1573:71;;1529:125;1316:345;;;;:::o",
+  "source": "// SPDX-License-Identifier: SEE LICENSE IN LICENSE\r\npragma solidity ^0.8.14;\r\n\r\ncontract SmartMoney {\r\n  address owner;\r\n  string fallbackMsg;\r\n\r\n  constructor() {\r\n    owner = msg.sender;\r\n  }\r\n\r\n  function getContractBalance() public view returns(uint) {\r\n    return address(this).balance; \r\n  }\r\n\r\n  function depositEth() public payable {}\r\n\r\n  function withdrawEth() public {\r\n    require(msg.sender == owner);\r\n    payable(owner).transfer(getContractBalance());\r\n  }\r\n\r\n  function withdrawToAddress(address payable to) public {\r\n    to.transfer(getContractBalance());\r\n  }\r\n}",
+  "sourcePath": "C:\\Users\\jung_\\Desktop\\Coding\\web3-projects\\web3-development-learning\\contracts\\section-four\\SmartMoney.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/section-four/SmartMoney.sol",
+    "exportedSymbols": {
+      "SmartMoney": [
+        966
+      ]
+    },
+    "id": 967,
+    "license": "SEE LICENSE IN LICENSE",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 903,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".14"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "52:24:11"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "SmartMoney",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 966,
+        "linearizedBaseContracts": [
+          966
+        ],
+        "name": "SmartMoney",
+        "nameLocation": "89:10:11",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 905,
+            "mutability": "mutable",
+            "name": "owner",
+            "nameLocation": "113:5:11",
+            "nodeType": "VariableDeclaration",
+            "scope": 966,
+            "src": "105:13:11",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 904,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "105:7:11",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 907,
+            "mutability": "mutable",
+            "name": "fallbackMsg",
+            "nameLocation": "130:11:11",
+            "nodeType": "VariableDeclaration",
+            "scope": 966,
+            "src": "123:18:11",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 906,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "123:6:11",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 915,
+              "nodeType": "Block",
+              "src": "162:31:11",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 913,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 910,
+                      "name": "owner",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 905,
+                      "src": "169:5:11",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "expression": {
+                        "id": 911,
+                        "name": "msg",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 4294967281,
+                        "src": "177:3:11",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_message",
+                          "typeString": "msg"
+                        }
+                      },
+                      "id": 912,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "181:6:11",
+                      "memberName": "sender",
+                      "nodeType": "MemberAccess",
+                      "src": "177:10:11",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "169:18:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 914,
+                  "nodeType": "ExpressionStatement",
+                  "src": "169:18:11"
+                }
+              ]
+            },
+            "id": 916,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 908,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "159:2:11"
+            },
+            "returnParameters": {
+              "id": 909,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "162:0:11"
+            },
+            "scope": 966,
+            "src": "148:45:11",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 927,
+              "nodeType": "Block",
+              "src": "255:42:11",
+              "statements": [
+                {
+                  "expression": {
+                    "expression": {
+                      "arguments": [
+                        {
+                          "id": 923,
+                          "name": "this",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 4294967268,
+                          "src": "277:4:11",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_SmartMoney_$966",
+                            "typeString": "contract SmartMoney"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_contract$_SmartMoney_$966",
+                            "typeString": "contract SmartMoney"
+                          }
+                        ],
+                        "id": 922,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "nodeType": "ElementaryTypeNameExpression",
+                        "src": "269:7:11",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_address_$",
+                          "typeString": "type(address)"
+                        },
+                        "typeName": {
+                          "id": 921,
+                          "name": "address",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "269:7:11",
+                          "typeDescriptions": {}
+                        }
+                      },
+                      "id": 924,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "nameLocations": [],
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "269:13:11",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 925,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberLocation": "283:7:11",
+                    "memberName": "balance",
+                    "nodeType": "MemberAccess",
+                    "src": "269:21:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 920,
+                  "id": 926,
+                  "nodeType": "Return",
+                  "src": "262:28:11"
+                }
+              ]
+            },
+            "functionSelector": "6f9fb98a",
+            "id": 928,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getContractBalance",
+            "nameLocation": "208:18:11",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 917,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "226:2:11"
+            },
+            "returnParameters": {
+              "id": 920,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 919,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 928,
+                  "src": "249:4:11",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 918,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "249:4:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "248:6:11"
+            },
+            "scope": 966,
+            "src": "199:98:11",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 931,
+              "nodeType": "Block",
+              "src": "340:2:11",
+              "statements": []
+            },
+            "functionSelector": "439370b1",
+            "id": 932,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "depositEth",
+            "nameLocation": "312:10:11",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 929,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "322:2:11"
+            },
+            "returnParameters": {
+              "id": 930,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "340:0:11"
+            },
+            "scope": 966,
+            "src": "303:39:11",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 951,
+              "nodeType": "Block",
+              "src": "378:93:11",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "commonType": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "id": 939,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "expression": {
+                            "id": 936,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 4294967281,
+                            "src": "393:3:11",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 937,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberLocation": "397:6:11",
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "src": "393:10:11",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "id": 938,
+                          "name": "owner",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 905,
+                          "src": "407:5:11",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "src": "393:19:11",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 935,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        4294967278,
+                        4294967278
+                      ],
+                      "referencedDeclaration": 4294967278,
+                      "src": "385:7:11",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
+                        "typeString": "function (bool) pure"
+                      }
+                    },
+                    "id": 940,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "385:28:11",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 941,
+                  "nodeType": "ExpressionStatement",
+                  "src": "385:28:11"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "arguments": [],
+                        "expression": {
+                          "argumentTypes": [],
+                          "id": 947,
+                          "name": "getContractBalance",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 928,
+                          "src": "444:18:11",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_internal_view$__$returns$_t_uint256_$",
+                            "typeString": "function () view returns (uint256)"
+                          }
+                        },
+                        "id": 948,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "nameLocations": [],
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "444:20:11",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "arguments": [
+                          {
+                            "id": 944,
+                            "name": "owner",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 905,
+                            "src": "428:5:11",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          ],
+                          "id": 943,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "420:8:11",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_address_payable_$",
+                            "typeString": "type(address payable)"
+                          },
+                          "typeName": {
+                            "id": 942,
+                            "name": "address",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "420:8:11",
+                            "stateMutability": "payable",
+                            "typeDescriptions": {}
+                          }
+                        },
+                        "id": 945,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "nameLocations": [],
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "420:14:11",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      },
+                      "id": 946,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "435:8:11",
+                      "memberName": "transfer",
+                      "nodeType": "MemberAccess",
+                      "src": "420:23:11",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_transfer_nonpayable$_t_uint256_$returns$__$",
+                        "typeString": "function (uint256)"
+                      }
+                    },
+                    "id": 949,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "420:45:11",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 950,
+                  "nodeType": "ExpressionStatement",
+                  "src": "420:45:11"
+                }
+              ]
+            },
+            "functionSelector": "a0ef91df",
+            "id": 952,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "withdrawEth",
+            "nameLocation": "357:11:11",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 933,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "368:2:11"
+            },
+            "returnParameters": {
+              "id": 934,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "378:0:11"
+            },
+            "scope": 966,
+            "src": "348:123:11",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 964,
+              "nodeType": "Block",
+              "src": "531:46:11",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "arguments": [],
+                        "expression": {
+                          "argumentTypes": [],
+                          "id": 960,
+                          "name": "getContractBalance",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 928,
+                          "src": "550:18:11",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_internal_view$__$returns$_t_uint256_$",
+                            "typeString": "function () view returns (uint256)"
+                          }
+                        },
+                        "id": 961,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "nameLocations": [],
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "550:20:11",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "id": 957,
+                        "name": "to",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 954,
+                        "src": "538:2:11",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      },
+                      "id": 959,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "541:8:11",
+                      "memberName": "transfer",
+                      "nodeType": "MemberAccess",
+                      "src": "538:11:11",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_transfer_nonpayable$_t_uint256_$returns$__$",
+                        "typeString": "function (uint256)"
+                      }
+                    },
+                    "id": 962,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "538:33:11",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 963,
+                  "nodeType": "ExpressionStatement",
+                  "src": "538:33:11"
+                }
+              ]
+            },
+            "functionSelector": "a92bd72c",
+            "id": 965,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "withdrawToAddress",
+            "nameLocation": "486:17:11",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 955,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 954,
+                  "mutability": "mutable",
+                  "name": "to",
+                  "nameLocation": "520:2:11",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 965,
+                  "src": "504:18:11",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address_payable",
+                    "typeString": "address payable"
+                  },
+                  "typeName": {
+                    "id": 953,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "504:15:11",
+                    "stateMutability": "payable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address_payable",
+                      "typeString": "address payable"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "503:20:11"
+            },
+            "returnParameters": {
+              "id": 956,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "531:0:11"
+            },
+            "scope": 966,
+            "src": "477:100:11",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 967,
+        "src": "80:500:11",
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "src": "52:528:11"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.21+commit.d9974bed.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.16",
+  "updatedAt": "2024-08-04T19:41:23.864Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
