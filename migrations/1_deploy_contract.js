@@ -1,3 +1,14 @@
+// * SECTION 6 
+
+const Event = artifacts.require("Event");
+
+module.exports = async function (deployer) {
+  await deployer.deploy(Event);
+};
+
+
+
+
 // * SECTION 5
 
 // const Mapping = artifacts.require("Mapping");
@@ -42,20 +53,20 @@
 
 // * SECTION 3 
 
-const Types = artifacts.require("Types");
-const WrapAround = artifacts.require("WrapAround");
-const Strings = artifacts.require("Strings");
-const Addresses = artifacts.require("Addresses");
-const MsgSender = artifacts.require("MsgSender");
-const ViewPure = artifacts.require("ViewPure");
-const Constructor = artifacts.require("Constructor");
+// const Types = artifacts.require("Types");
+// const WrapAround = artifacts.require("WrapAround");
+// const Strings = artifacts.require("Strings");
+// const Addresses = artifacts.require("Addresses");
+// const MsgSender = artifacts.require("MsgSender");
+// const ViewPure = artifacts.require("ViewPure");
+// const Constructor = artifacts.require("Constructor");
 
-module.exports = function (deployer) {
-  deployer.deploy(Types);
+// module.exports = function (deployer) {
+//   deployer.deploy(Types);
   // deployer.deploy(WrapAround);
   // deployer.deploy(Strings);
   // deployer.deploy(Addresses);
   // deployer.deploy(MsgSender);
   // deployer.deploy(ViewPure);
   // deployer.deploy(Constructor);
-};
+// };
