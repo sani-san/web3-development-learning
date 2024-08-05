@@ -17,8 +17,7 @@
       "name": "aFunction",
       "outputs": [],
       "stateMutability": "pure",
-      "type": "function",
-      "constant": true
+      "type": "function"
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"name\":\"NotAllowedError\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"aFunction\",\"outputs\":[],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/section-five/TryCatch.sol\":\"TryCatch\"},\"evmVersion\":\"shanghai\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/section-five/TryCatch.sol\":{\"keccak256\":\"0x9eb8bdb2037602c6138130e4c94bcd08b7fae3954050196d1b060124d3ad0899\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://c60d1d198629ad6ddf1339ad887b238a26856dda4ddd9195f599b061c95a9567\",\"dweb:/ipfs/QmUNHNhckGzsxigm2ba5RD8zZ8giZwM6aUqXJLfgkjYkYr\"]}},\"version\":1}",
@@ -541,18 +540,18 @@
     "absolutePath": "project:/contracts/section-five/TryCatch.sol",
     "exportedSymbols": {
       "Test": [
-        823
+        840
       ],
       "TryCatch": [
-        765
+        782
       ]
     },
-    "id": 824,
+    "id": 841,
     "license": "SEE LICENSE IN LICENSE",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 752,
+        "id": 769,
         "literals": [
           "solidity",
           "^",
@@ -569,9 +568,9 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 765,
+        "id": 782,
         "linearizedBaseContracts": [
-          765
+          782
         ],
         "name": "TryCatch",
         "nameLocation": "89:8:8",
@@ -579,22 +578,22 @@
         "nodes": [
           {
             "errorSelector": "b94e62a1",
-            "id": 756,
+            "id": 773,
             "name": "NotAllowedError",
             "nameLocation": "109:15:8",
             "nodeType": "ErrorDefinition",
             "parameters": {
-              "id": 755,
+              "id": 772,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 754,
+                  "id": 771,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 756,
+                  "scope": 773,
                   "src": "125:6:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -603,7 +602,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 753,
+                    "id": 770,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "125:6:8",
@@ -621,7 +620,7 @@
           },
           {
             "body": {
-              "id": 763,
+              "id": 780,
               "nodeType": "Block",
               "src": "172:115:8",
               "statements": [
@@ -630,7 +629,7 @@
                     "arguments": [
                       {
                         "hexValue": "4e6f7420616c6c6f7765642e",
-                        "id": 760,
+                        "id": 777,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -652,18 +651,18 @@
                           "typeString": "literal_string \"Not allowed.\""
                         }
                       ],
-                      "id": 759,
+                      "id": 776,
                       "name": "NotAllowedError",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 756,
+                      "referencedDeclaration": 773,
                       "src": "250:15:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_error_pure$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (string memory) pure"
                       }
                     },
-                    "id": 761,
+                    "id": 778,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -679,14 +678,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 762,
+                  "id": 779,
                   "nodeType": "RevertStatement",
                   "src": "243:38:8"
                 }
               ]
             },
             "functionSelector": "39c117a4",
-            "id": 764,
+            "id": 781,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -694,28 +693,28 @@
             "nameLocation": "146:9:8",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 757,
+              "id": 774,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "155:2:8"
             },
             "returnParameters": {
-              "id": 758,
+              "id": 775,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "172:0:8"
             },
-            "scope": 765,
+            "scope": 782,
             "src": "137:150:8",
             "stateMutability": "pure",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 824,
+        "scope": 841,
         "src": "80:210:8",
         "usedErrors": [
-          756
+          773
         ],
         "usedEvents": []
       },
@@ -724,13 +723,13 @@
         "baseContracts": [],
         "canonicalName": "Test",
         "contractDependencies": [
-          765
+          782
         ],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 823,
+        "id": 840,
         "linearizedBaseContracts": [
-          823
+          840
         ],
         "name": "Test",
         "nameLocation": "303:4:8",
@@ -739,23 +738,23 @@
           {
             "anonymous": false,
             "eventSelector": "dcbe72357183be3854887085e70fd914c4c1733a94106878f48e8ba069d8fabc",
-            "id": 769,
+            "id": 786,
             "name": "ErrorLogging",
             "nameLocation": "319:12:8",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 768,
+              "id": 785,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 767,
+                  "id": 784,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "reason",
                   "nameLocation": "339:6:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 769,
+                  "scope": 786,
                   "src": "332:13:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -764,7 +763,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 766,
+                    "id": 783,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "332:6:8",
@@ -783,23 +782,23 @@
           {
             "anonymous": false,
             "eventSelector": "29b40167f3248a50a300e50f3ea6088477baca03aa8065424bd02d92d8b87970",
-            "id": 773,
+            "id": 790,
             "name": "ErrorLogCode",
             "nameLocation": "357:12:8",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 772,
+              "id": 789,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 771,
+                  "id": 788,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "code",
                   "nameLocation": "375:4:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 773,
+                  "scope": 790,
                   "src": "370:9:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -808,7 +807,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 770,
+                    "id": 787,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "370:4:8",
@@ -827,23 +826,23 @@
           {
             "anonymous": false,
             "eventSelector": "ca0c98a5e8f87f29ffdaadfa103d8e525236a2912c2caedb8aa606eb60041f10",
-            "id": 777,
+            "id": 794,
             "name": "ErrorLogBytes",
             "nameLocation": "391:13:8",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 776,
+              "id": 793,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 775,
+                  "id": 792,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "lowLevelData",
                   "nameLocation": "411:12:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 777,
+                  "scope": 794,
                   "src": "405:18:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -852,7 +851,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 774,
+                    "id": 791,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "405:5:8",
@@ -870,59 +869,59 @@
           },
           {
             "body": {
-              "id": 821,
+              "id": 838,
               "nodeType": "Block",
               "src": "459:411:8",
               "statements": [
                 {
                   "assignments": [
-                    782
+                    799
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 782,
+                      "id": 799,
                       "mutability": "mutable",
                       "name": "ex",
                       "nameLocation": "475:2:8",
                       "nodeType": "VariableDeclaration",
-                      "scope": 821,
+                      "scope": 838,
                       "src": "466:11:8",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_TryCatch_$765",
+                        "typeIdentifier": "t_contract$_TryCatch_$782",
                         "typeString": "contract TryCatch"
                       },
                       "typeName": {
-                        "id": 781,
+                        "id": 798,
                         "nodeType": "UserDefinedTypeName",
                         "pathNode": {
-                          "id": 780,
+                          "id": 797,
                           "name": "TryCatch",
                           "nameLocations": [
                             "466:8:8"
                           ],
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 765,
+                          "referencedDeclaration": 782,
                           "src": "466:8:8"
                         },
-                        "referencedDeclaration": 765,
+                        "referencedDeclaration": 782,
                         "src": "466:8:8",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_TryCatch_$765",
+                          "typeIdentifier": "t_contract$_TryCatch_$782",
                           "typeString": "contract TryCatch"
                         }
                       },
                       "visibility": "internal"
                     }
                   ],
-                  "id": 787,
+                  "id": 804,
                   "initialValue": {
                     "arguments": [],
                     "expression": {
                       "argumentTypes": [],
-                      "id": 785,
+                      "id": 802,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -930,31 +929,31 @@
                       "nodeType": "NewExpression",
                       "src": "480:12:8",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_TryCatch_$765_$",
+                        "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_TryCatch_$782_$",
                         "typeString": "function () returns (contract TryCatch)"
                       },
                       "typeName": {
-                        "id": 784,
+                        "id": 801,
                         "nodeType": "UserDefinedTypeName",
                         "pathNode": {
-                          "id": 783,
+                          "id": 800,
                           "name": "TryCatch",
                           "nameLocations": [
                             "484:8:8"
                           ],
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 765,
+                          "referencedDeclaration": 782,
                           "src": "484:8:8"
                         },
-                        "referencedDeclaration": 765,
+                        "referencedDeclaration": 782,
                         "src": "484:8:8",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_TryCatch_$765",
+                          "typeIdentifier": "t_contract$_TryCatch_$782",
                           "typeString": "contract TryCatch"
                         }
                       }
                     },
-                    "id": 786,
+                    "id": 803,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -966,7 +965,7 @@
                     "src": "480:14:8",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_TryCatch_$765",
+                      "typeIdentifier": "t_contract$_TryCatch_$782",
                       "typeString": "contract TryCatch"
                     }
                   },
@@ -977,19 +976,19 @@
                   "clauses": [
                     {
                       "block": {
-                        "id": 791,
+                        "id": 808,
                         "nodeType": "Block",
                         "src": "526:8:8",
                         "statements": []
                       },
                       "errorName": "",
-                      "id": 792,
+                      "id": 809,
                       "nodeType": "TryCatchClause",
                       "src": "526:8:8"
                     },
                     {
                       "block": {
-                        "id": 800,
+                        "id": 817,
                         "nodeType": "Block",
                         "src": "569:76:8",
                         "statements": [
@@ -997,11 +996,11 @@
                             "eventCall": {
                               "arguments": [
                                 {
-                                  "id": 797,
+                                  "id": 814,
                                   "name": "reason",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 794,
+                                  "referencedDeclaration": 811,
                                   "src": "630:6:8",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_string_memory_ptr",
@@ -1016,18 +1015,18 @@
                                     "typeString": "string memory"
                                   }
                                 ],
-                                "id": 796,
+                                "id": 813,
                                 "name": "ErrorLogging",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 769,
+                                "referencedDeclaration": 786,
                                 "src": "617:12:8",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$returns$__$",
                                   "typeString": "function (string memory)"
                                 }
                               },
-                              "id": 798,
+                              "id": 815,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -1043,27 +1042,27 @@
                                 "typeString": "tuple()"
                               }
                             },
-                            "id": 799,
+                            "id": 816,
                             "nodeType": "EmitStatement",
                             "src": "612:25:8"
                           }
                         ]
                       },
                       "errorName": "Error",
-                      "id": 801,
+                      "id": 818,
                       "nodeType": "TryCatchClause",
                       "parameters": {
-                        "id": 795,
+                        "id": 812,
                         "nodeType": "ParameterList",
                         "parameters": [
                           {
                             "constant": false,
-                            "id": 794,
+                            "id": 811,
                             "mutability": "mutable",
                             "name": "reason",
                             "nameLocation": "561:6:8",
                             "nodeType": "VariableDeclaration",
-                            "scope": 801,
+                            "scope": 818,
                             "src": "547:20:8",
                             "stateVariable": false,
                             "storageLocation": "memory",
@@ -1072,7 +1071,7 @@
                               "typeString": "string"
                             },
                             "typeName": {
-                              "id": 793,
+                              "id": 810,
                               "name": "string",
                               "nodeType": "ElementaryTypeName",
                               "src": "547:6:8",
@@ -1090,7 +1089,7 @@
                     },
                     {
                       "block": {
-                        "id": 809,
+                        "id": 826,
                         "nodeType": "Block",
                         "src": "674:78:8",
                         "statements": [
@@ -1098,11 +1097,11 @@
                             "eventCall": {
                               "arguments": [
                                 {
-                                  "id": 806,
+                                  "id": 823,
                                   "name": "errorCode",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 803,
+                                  "referencedDeclaration": 820,
                                   "src": "734:9:8",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_uint256",
@@ -1117,18 +1116,18 @@
                                     "typeString": "uint256"
                                   }
                                 ],
-                                "id": 805,
+                                "id": 822,
                                 "name": "ErrorLogCode",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 773,
+                                "referencedDeclaration": 790,
                                 "src": "721:12:8",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$returns$__$",
                                   "typeString": "function (uint256)"
                                 }
                               },
-                              "id": 807,
+                              "id": 824,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -1144,27 +1143,27 @@
                                 "typeString": "tuple()"
                               }
                             },
-                            "id": 808,
+                            "id": 825,
                             "nodeType": "EmitStatement",
                             "src": "716:28:8"
                           }
                         ]
                       },
                       "errorName": "Panic",
-                      "id": 810,
+                      "id": 827,
                       "nodeType": "TryCatchClause",
                       "parameters": {
-                        "id": 804,
+                        "id": 821,
                         "nodeType": "ParameterList",
                         "parameters": [
                           {
                             "constant": false,
-                            "id": 803,
+                            "id": 820,
                             "mutability": "mutable",
                             "name": "errorCode",
                             "nameLocation": "663:9:8",
                             "nodeType": "VariableDeclaration",
-                            "scope": 810,
+                            "scope": 827,
                             "src": "658:14:8",
                             "stateVariable": false,
                             "storageLocation": "default",
@@ -1173,7 +1172,7 @@
                               "typeString": "uint256"
                             },
                             "typeName": {
-                              "id": 802,
+                              "id": 819,
                               "name": "uint",
                               "nodeType": "ElementaryTypeName",
                               "src": "658:4:8",
@@ -1191,7 +1190,7 @@
                     },
                     {
                       "block": {
-                        "id": 818,
+                        "id": 835,
                         "nodeType": "Block",
                         "src": "786:79:8",
                         "statements": [
@@ -1199,11 +1198,11 @@
                             "eventCall": {
                               "arguments": [
                                 {
-                                  "id": 815,
+                                  "id": 832,
                                   "name": "lowLevelData",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 812,
+                                  "referencedDeclaration": 829,
                                   "src": "843:12:8",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_bytes_memory_ptr",
@@ -1218,18 +1217,18 @@
                                     "typeString": "bytes memory"
                                   }
                                 ],
-                                "id": 814,
+                                "id": 831,
                                 "name": "ErrorLogBytes",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 777,
+                                "referencedDeclaration": 794,
                                 "src": "829:13:8",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_event_nonpayable$_t_bytes_memory_ptr_$returns$__$",
                                   "typeString": "function (bytes memory)"
                                 }
                               },
-                              "id": 816,
+                              "id": 833,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -1245,27 +1244,27 @@
                                 "typeString": "tuple()"
                               }
                             },
-                            "id": 817,
+                            "id": 834,
                             "nodeType": "EmitStatement",
                             "src": "824:32:8"
                           }
                         ]
                       },
                       "errorName": "",
-                      "id": 819,
+                      "id": 836,
                       "nodeType": "TryCatchClause",
                       "parameters": {
-                        "id": 813,
+                        "id": 830,
                         "nodeType": "ParameterList",
                         "parameters": [
                           {
                             "constant": false,
-                            "id": 812,
+                            "id": 829,
                             "mutability": "mutable",
                             "name": "lowLevelData",
                             "nameLocation": "772:12:8",
                             "nodeType": "VariableDeclaration",
-                            "scope": 819,
+                            "scope": 836,
                             "src": "759:25:8",
                             "stateVariable": false,
                             "storageLocation": "memory",
@@ -1274,7 +1273,7 @@
                               "typeString": "bytes"
                             },
                             "typeName": {
-                              "id": 811,
+                              "id": 828,
                               "name": "bytes",
                               "nodeType": "ElementaryTypeName",
                               "src": "759:5:8",
@@ -1296,18 +1295,18 @@
                     "expression": {
                       "argumentTypes": [],
                       "expression": {
-                        "id": 788,
+                        "id": 805,
                         "name": "ex",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 782,
+                        "referencedDeclaration": 799,
                         "src": "511:2:8",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_TryCatch_$765",
+                          "typeIdentifier": "t_contract$_TryCatch_$782",
                           "typeString": "contract TryCatch"
                         }
                       },
-                      "id": 789,
+                      "id": 806,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1315,14 +1314,14 @@
                       "memberLocation": "514:9:8",
                       "memberName": "aFunction",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 764,
+                      "referencedDeclaration": 781,
                       "src": "511:12:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_pure$__$returns$__$",
                         "typeString": "function () pure external"
                       }
                     },
-                    "id": 790,
+                    "id": 807,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1338,14 +1337,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 820,
+                  "id": 837,
                   "nodeType": "TryStatement",
                   "src": "507:358:8"
                 }
               ]
             },
             "functionSelector": "6e5bd982",
-            "id": 822,
+            "id": 839,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -1353,31 +1352,31 @@
             "nameLocation": "440:9:8",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 778,
+              "id": 795,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "449:2:8"
             },
             "returnParameters": {
-              "id": 779,
+              "id": 796,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "459:0:8"
             },
-            "scope": 823,
+            "scope": 840,
             "src": "431:439:8",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 824,
+        "scope": 841,
         "src": "294:579:8",
         "usedErrors": [],
         "usedEvents": [
-          769,
-          773,
-          777
+          786,
+          790,
+          794
         ]
       }
     ],
@@ -1387,17 +1386,9 @@
     "name": "solc",
     "version": "0.8.21+commit.d9974bed.Emscripten.clang"
   },
-  "networks": {
-    "1722788810759": {
-      "events": {},
-      "links": {},
-      "address": "0x8142dE5b2323B09f6A6da57Eba86011C7651eb46",
-      "transactionHash": "0xbbd6e679c272cd976a3244d95332b1fb4b15d566ebaa0a1e1d16220d3109c877"
-    }
-  },
+  "networks": {},
   "schemaVersion": "3.4.16",
-  "updatedAt": "2024-08-04T19:41:25.106Z",
-  "networkType": "ethereum",
+  "updatedAt": "2024-08-05T14:18:49.822Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

@@ -17,16 +17,14 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [],
       "name": "payContract",
       "outputs": [],
       "stateMutability": "payable",
-      "type": "function",
-      "payable": true
+      "type": "function"
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"payContract\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"payment\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/section-five/Struct.sol\":\"Struct\"},\"evmVersion\":\"shanghai\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/section-five/Struct.sol\":{\"keccak256\":\"0x625f0de56bd381b35207025ee577fa5bd84c8702f05914d110acffe27bf200f8\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://9d4cfff70ae2d76f62b8b1c33324ec3993e833b2950f8df57d8c23d3a7906590\",\"dweb:/ipfs/QmUbZrxKw1mBZKh477JGZPmKLpmeVSa9yJ3bHYbydWW5NB\"]}},\"version\":1}",
@@ -572,15 +570,15 @@
     "absolutePath": "project:/contracts/section-five/Struct.sol",
     "exportedSymbols": {
       "Struct": [
-        750
+        767
       ]
     },
-    "id": 751,
+    "id": 768,
     "license": "SEE LICENSE IN LICENSE",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 723,
+        "id": 740,
         "literals": [
           "solidity",
           "^",
@@ -597,9 +595,9 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 750,
+        "id": 767,
         "linearizedBaseContracts": [
-          750
+          767
         ],
         "name": "Struct",
         "nameLocation": "93:6:7",
@@ -607,16 +605,16 @@
         "nodes": [
           {
             "canonicalName": "Struct.PaymentReceived",
-            "id": 728,
+            "id": 745,
             "members": [
               {
                 "constant": false,
-                "id": 725,
+                "id": 742,
                 "mutability": "mutable",
                 "name": "from",
                 "nameLocation": "143:4:7",
                 "nodeType": "VariableDeclaration",
-                "scope": 728,
+                "scope": 745,
                 "src": "135:12:7",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -625,7 +623,7 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 724,
+                  "id": 741,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
                   "src": "135:7:7",
@@ -639,12 +637,12 @@
               },
               {
                 "constant": false,
-                "id": 727,
+                "id": 744,
                 "mutability": "mutable",
                 "name": "amount",
                 "nameLocation": "159:6:7",
                 "nodeType": "VariableDeclaration",
-                "scope": 728,
+                "scope": 745,
                 "src": "154:11:7",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -653,7 +651,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 726,
+                  "id": 743,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
                   "src": "154:4:7",
@@ -668,43 +666,43 @@
             "name": "PaymentReceived",
             "nameLocation": "112:15:7",
             "nodeType": "StructDefinition",
-            "scope": 750,
+            "scope": 767,
             "src": "105:66:7",
             "visibility": "public"
           },
           {
             "constant": false,
             "functionSelector": "42f6487a",
-            "id": 731,
+            "id": 748,
             "mutability": "mutable",
             "name": "payment",
             "nameLocation": "200:7:7",
             "nodeType": "VariableDeclaration",
-            "scope": 750,
+            "scope": 767,
             "src": "177:30:7",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_struct$_PaymentReceived_$728_storage",
+              "typeIdentifier": "t_struct$_PaymentReceived_$745_storage",
               "typeString": "struct Struct.PaymentReceived"
             },
             "typeName": {
-              "id": 730,
+              "id": 747,
               "nodeType": "UserDefinedTypeName",
               "pathNode": {
-                "id": 729,
+                "id": 746,
                 "name": "PaymentReceived",
                 "nameLocations": [
                   "177:15:7"
                 ],
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 728,
+                "referencedDeclaration": 745,
                 "src": "177:15:7"
               },
-              "referencedDeclaration": 728,
+              "referencedDeclaration": 745,
               "src": "177:15:7",
               "typeDescriptions": {
-                "typeIdentifier": "t_struct$_PaymentReceived_$728_storage_ptr",
+                "typeIdentifier": "t_struct$_PaymentReceived_$745_storage_ptr",
                 "typeString": "struct Struct.PaymentReceived"
               }
             },
@@ -712,31 +710,31 @@
           },
           {
             "body": {
-              "id": 748,
+              "id": 765,
               "nodeType": "Block",
               "src": "252:71:7",
               "statements": [
                 {
                   "expression": {
-                    "id": 739,
+                    "id": 756,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "expression": {
-                        "id": 734,
+                        "id": 751,
                         "name": "payment",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 731,
+                        "referencedDeclaration": 748,
                         "src": "259:7:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_PaymentReceived_$728_storage",
+                          "typeIdentifier": "t_struct$_PaymentReceived_$745_storage",
                           "typeString": "struct Struct.PaymentReceived storage ref"
                         }
                       },
-                      "id": 736,
+                      "id": 753,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -744,7 +742,7 @@
                       "memberLocation": "267:4:7",
                       "memberName": "from",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 725,
+                      "referencedDeclaration": 742,
                       "src": "259:12:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -755,7 +753,7 @@
                     "operator": "=",
                     "rightHandSide": {
                       "expression": {
-                        "id": 737,
+                        "id": 754,
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -766,7 +764,7 @@
                           "typeString": "msg"
                         }
                       },
-                      "id": 738,
+                      "id": 755,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -786,31 +784,31 @@
                       "typeString": "address"
                     }
                   },
-                  "id": 740,
+                  "id": 757,
                   "nodeType": "ExpressionStatement",
                   "src": "259:25:7"
                 },
                 {
                   "expression": {
-                    "id": 746,
+                    "id": 763,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "expression": {
-                        "id": 741,
+                        "id": 758,
                         "name": "payment",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 731,
+                        "referencedDeclaration": 748,
                         "src": "291:7:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_PaymentReceived_$728_storage",
+                          "typeIdentifier": "t_struct$_PaymentReceived_$745_storage",
                           "typeString": "struct Struct.PaymentReceived storage ref"
                         }
                       },
-                      "id": 743,
+                      "id": 760,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -818,7 +816,7 @@
                       "memberLocation": "299:6:7",
                       "memberName": "amount",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 727,
+                      "referencedDeclaration": 744,
                       "src": "291:14:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -829,7 +827,7 @@
                     "operator": "=",
                     "rightHandSide": {
                       "expression": {
-                        "id": 744,
+                        "id": 761,
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -840,7 +838,7 @@
                           "typeString": "msg"
                         }
                       },
-                      "id": 745,
+                      "id": 762,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -860,14 +858,14 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 747,
+                  "id": 764,
                   "nodeType": "ExpressionStatement",
                   "src": "291:26:7"
                 }
               ]
             },
             "functionSelector": "ecb0b862",
-            "id": 749,
+            "id": 766,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -875,25 +873,25 @@
             "nameLocation": "223:11:7",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 732,
+              "id": 749,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "234:2:7"
             },
             "returnParameters": {
-              "id": 733,
+              "id": 750,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "252:0:7"
             },
-            "scope": 750,
+            "scope": 767,
             "src": "214:109:7",
             "stateMutability": "payable",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 751,
+        "scope": 768,
         "src": "84:242:7",
         "usedErrors": [],
         "usedEvents": []
@@ -905,17 +903,9 @@
     "name": "solc",
     "version": "0.8.21+commit.d9974bed.Emscripten.clang"
   },
-  "networks": {
-    "1722788810759": {
-      "events": {},
-      "links": {},
-      "address": "0x53485a1BeE816Ce41a2D1771CFF653AEAbB71FBc",
-      "transactionHash": "0x891e11031647909a35650272115a16ee7ff9eb697d0e9d2b22f1e3c6041ef9cf"
-    }
-  },
+  "networks": {},
   "schemaVersion": "3.4.16",
-  "updatedAt": "2024-08-04T19:41:25.101Z",
-  "networkType": "ethereum",
+  "updatedAt": "2024-08-05T14:18:49.819Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

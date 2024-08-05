@@ -3,8 +3,7 @@
   "abi": [
     {
       "stateMutability": "payable",
-      "type": "receive",
-      "payable": true
+      "type": "receive"
     },
     {
       "inputs": [
@@ -2047,17 +2046,9 @@
     "name": "solc",
     "version": "0.8.21+commit.d9974bed.Emscripten.clang"
   },
-  "networks": {
-    "1722788810759": {
-      "events": {},
-      "links": {},
-      "address": "0x11C35F98285b84582d2d7d42dB38a9AA0973d179",
-      "transactionHash": "0x51d6a3fffcefe3375505e73ffb78e19ee5ec3c84d99d2c0d19acff22b5c3d60f"
-    }
-  },
+  "networks": {},
   "schemaVersion": "3.4.16",
-  "updatedAt": "2024-08-04T19:41:25.107Z",
-  "networkType": "ethereum",
+  "updatedAt": "2024-08-05T14:18:49.813Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

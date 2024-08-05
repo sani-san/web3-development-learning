@@ -18,16 +18,14 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [],
       "name": "deposit",
       "outputs": [],
       "stateMutability": "payable",
-      "type": "function",
-      "payable": true
+      "type": "function"
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"addressBalances\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"deposit\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/section-five/ContactCall.sol\":\"ContractOne\"},\"evmVersion\":\"shanghai\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/section-five/ContactCall.sol\":{\"keccak256\":\"0xd92dedb225ce0fa9581d10c3d5fc47ed1f6ade35d7ed253c44a9fbb72014b98d\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://8d6d91a1479e112dc1545a30406e41fa8f2a5137405c580d326db0073e13dfa6\",\"dweb:/ipfs/QmbDhbg3cuBfZaShKvws6UgCYkbujRUTBQfmRUocUn38Bj\"]}},\"version\":1}",
@@ -2004,17 +2002,9 @@
     "name": "solc",
     "version": "0.8.21+commit.d9974bed.Emscripten.clang"
   },
-  "networks": {
-    "1722788810759": {
-      "events": {},
-      "links": {},
-      "address": "0x407640E07625c5d963B98274c2d1D809297f1306",
-      "transactionHash": "0xc2e23562652557c63d5cd28b3926182b5e0fa88e8fa441f6e5dae0204cdd45cb"
-    }
-  },
+  "networks": {},
   "schemaVersion": "3.4.16",
-  "updatedAt": "2024-08-04T19:41:25.110Z",
-  "networkType": "ethereum",
+  "updatedAt": "2024-08-05T14:18:49.804Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

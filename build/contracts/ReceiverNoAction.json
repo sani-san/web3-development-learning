@@ -3,8 +3,7 @@
   "abi": [
     {
       "stateMutability": "payable",
-      "type": "receive",
-      "payable": true
+      "type": "receive"
     },
     {
       "inputs": [],
@@ -17,8 +16,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"balance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"stateMutability\":\"payable\",\"type\":\"receive\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/section-five/SendTransfer.sol\":\"ReceiverNoAction\"},\"evmVersion\":\"shanghai\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/section-five/SendTransfer.sol\":{\"keccak256\":\"0x8657a408ecebbb33f685c88b9e556c277c5a4a0f81d635aed6b4089b8c3226ce\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://778f5993f5d524ed9078b9afd7d61f8f82d7a01bcfd81ff237fcd5d628821ef3\",\"dweb:/ipfs/QmNjeKBKv9xmStqZ5f8AggdAb5cQ7DwMbEttAeNs3THMeJ\"]}},\"version\":1}",
@@ -1098,17 +1096,9 @@
     "name": "solc",
     "version": "0.8.21+commit.d9974bed.Emscripten.clang"
   },
-  "networks": {
-    "1722788810759": {
-      "events": {},
-      "links": {},
-      "address": "0x43600317339227bf100193567a97248827C69924",
-      "transactionHash": "0x4aba5249b2d8c5515fcc292323ab3ff16befe0dee8b658121c74728913858c6c"
-    }
-  },
+  "networks": {},
   "schemaVersion": "3.4.16",
-  "updatedAt": "2024-08-04T19:41:25.108Z",
-  "networkType": "ethereum",
+  "updatedAt": "2024-08-05T14:18:49.812Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
