@@ -1,16 +1,25 @@
+// * SECTION 7
+
+const Spacebear = artifacts.require("Spacebear");
+
+// ! can access (networks, accounts)
+module.exports = async function (deployer) { 
+  await deployer.deploy(Spacebear);
+};
+
 // * SECTION 6 
 
-const Event = artifacts.require("Event");
-const InheritanceModifier = artifacts.require("InheritanceModifier");
-const CoffeeToken = artifacts.require("CoffeeToken");
-const TokenSale = artifacts.require("TokenSale");
+// const Event = artifacts.require("Event");
+// const InheritanceModifier = artifacts.require("InheritanceModifier");
+// const CoffeeToken = artifacts.require("CoffeeToken");
+// const TokenSale = artifacts.require("TokenSale");
 
-module.exports = async function (deployer) {
-  await deployer.deploy(Event);
-  await deployer.deploy(InheritanceModifier);
-  const coffeeToken = await deployer.deploy(CoffeeToken);
-  await deployer.deploy(TokenSale, coffeeToken.address);
-};
+// module.exports = async function (deployer) {
+//   await deployer.deploy(Event);
+//   await deployer.deploy(InheritanceModifier);
+//   const coffeeToken = await deployer.deploy(CoffeeToken);
+//   await deployer.deploy(TokenSale, coffeeToken.address);
+// };
 
 // * SECTION 5
 

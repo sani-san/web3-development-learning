@@ -12,7 +12,10 @@
   "license": "ISC",
   "devDependencies": {
     "@truffle/hdwallet-provider": "^2.1.15",
-    "dotenv": "^16.4.5"
+    "chai": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "mocha": "^10.7.0",
+    "truffle-plugin-verify": "^0.6.7"
   },
   "dependencies": {
     "@openzeppelin/contracts": "^5.0.2",

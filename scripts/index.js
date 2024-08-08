@@ -4,6 +4,7 @@ const extractABI = require("./extract-abi");
 const eventScript = require("./contract-scripts/event");
 const inheritanceModifierScript = require("./contract-scripts/inheritance-modifier");
 const CoffeeTokenSale = require("./contract-scripts/coffee-token-sale");
+const spacebearScript = require("./contract-scripts/spacebear");
 
 const ethBalanceOfAll = async (accounts) => {
   for (let i=0; i < accounts.length; i++) {
@@ -28,8 +29,10 @@ const tabLog = (message) => {
     // await eventScript(web3, extractABI, accounts, tabLog);
     // console.log("--- InheritanceModifier Contract ---\n");
     // await inheritanceModifierScript(web3, extractABI, accounts, tabLog);
-    console.log("--- CoffeeTokenSale ---\n");
-    await CoffeeTokenSale(web3, extractABI, accounts, tabLog);
+    // console.log("--- CoffeeTokenSale ---\n");
+    // await CoffeeTokenSale(web3, extractABI, accounts, tabLog);
+    console.log("--- Spacebear Contract ---\n");
+    await spacebearScript(web3, extractABI, accounts, tabLog);
     console.log();
   } catch(error) {
     console.error("cannot fetch accounts." + error);
